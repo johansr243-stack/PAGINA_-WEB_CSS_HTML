@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sport&Life</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header-main">
+      <div class="header-logo">
+        Sport&<span class="text-primary">Life</span>
+      </div>
+      <nav class="nav-principal">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#rutinas" class="nav-link">Rutinas</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contacto.html" target="_blank" class="nav-link">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a href="./nutricion.html" target="_blank" class="nav-link">Nutrición</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Transforma tu cuerpo, <br />domina tu mente</h1>
+          <p>Planes personalizados de entrenamiento y guías nutricionales.</p>
+          <a href="#objetivos" class="btn-primary">Empezar ahora</a>
+        </div>
+      </section>
+
+      <section id="objetivos" class="section-objetivos">
+        <h2>¿Cuál es tu objetivo principal?</h2>
+        <div class="grid-layout">
+          <a href="#" class="card-objetivo">
+            <span class="icon">💪</span>
+            <h3>Masa Muscular</h3>
+            <p>Enfoque en hipertrofia y fuerza.</p>
+          </a>
+          <a href="#" class="card-objetivo">
+            <span class="icon">🔥</span>
+            <h3>Perder Grasa</h3>
+            <p>Entrenamiento metabólico y cardio.</p>
+          </a>
+          <a href="#" class="card-objetivo">
+            <span class="icon">🏃</span>
+            <h3>Rendimiento</h3>
+            <p>Movilidad, agilidad y resistencia.</p>
+          </a>
+        </div>
+      </section>
+
+     <section class="section-plans">
+    <h2 class="section-title">Tu Plan a Medida</h2>
+    
+    <div class="plans-container">
+        <aside class="profile-sidebar">
+            <div class="profile-card">
+                <h3 class="profile-title">Configura tu Perfil</h3>
+                <div class="input-group">
+                    <label>Edad:</label>
+                    <input type="number" class="input-field" placeholder="Ej: 25">
+                </div>
+                
+                <details class="bmi-dropdown">
+                    <summary class="bmi-summary">Calculadora IMC</summary>
+                    <div class="bmi-content">
+                        <input type="number" class="input-field" placeholder="Peso (kg)">
+                        <input type="number" class="input-field" placeholder="Estatura (cm)">
+                        <p class="bmi-note">*El IMC ayuda a definir tu punto de partida.</p>
+                    </div>
+                </details>
+            </div>
+        </aside>
+
+        <div class="services-grid">
+            
+            <article class="service-item service-boxing">
+                <div class="service-badge">Intenso</div>
+                <h3 class="service-name">Boxing Master</h3>
+                <p class="service-desc">Técnica de golpeo, sacos y acondicionamiento de alta intensidad.</p>
+                <div class="service-price">$45.000 <small>/mes</small></div>
+                <button class="btn-select">Elegir</button>
+            </article>
+
+            <article class="service-item service-dance">
+                <div class="service-badge badge-dance">Ritmo</div>
+                <h3 class="service-name">Dance Studio</h3>
+                <p class="service-desc">Bachata, Salsa y Twerk. Quema calorías mientras dominas la pista.</p>
+                <div class="service-price">$35.000 <small>/mes</small></div>
+                <button class="btn-select">Elegir</button>
+            </article>
+
+            <article class="service-item service-gym">
+                <div class="service-badge badge-gym">Poder</div>
+                <h3 class="service-name">Musculación</h3>
+                <p class="service-desc">Rutinas de pesas enfocadas en hipertrofia y fuerza máxima.</p>
+                <div class="service-price">$40.000 <small>/mes</small></div>
+                <button class="btn-select">Elegir</button>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+HTML
+<section class="anatomy-main">
+    <div class="anatomy-grid">
+        
+        <div class="anatomy-visual">
+            <svg viewBox="0 0 300 500" class="svg-body">
+                <circle cx="150" cy="60" r="25" class="body-part" />
+                
+                <path class="muscle-trigger m-pecho" d="M110,110 Q150,100 190,110 L190,150 Q150,160 110,150 Z" />
+                
+                <path class="muscle-trigger m-brazos" d="M70,120 L100,120 L100,230 L70,230 Z" />
+                <path class="muscle-trigger m-brazos" d="M200,120 L230,120 L230,230 L200,230 Z" />
+                
+                <path class="muscle-trigger m-abdomen" d="M120,170 L180,170 L175,270 L125,270 Z" />
+                
+                <path class="muscle-trigger m-piernas" d="M115,290 L145,290 L140,460 L110,460 Z" />
+                <path class="muscle-trigger m-piernas" d="M155,290 L185,290 L190,460 L160,460 Z" />
+            </svg>
+        </div>
+
+        <div class="anatomy-content">
+            <div class="info-card-muscle card-default">
+                <h2 class="text-white">Explora tu Potencial</h2>
+                <p class="text-white">Pasa el cursor sobre los grupos musculares para ver su aplicación en Boxeo, Baile y Pesas.</p>
+            </div>
+
+            <div class="info-card-muscle card-pecho">
+                <h2 class="text-white">Pectorales (Pecho)</h2>
+                <p class="text-white">Fundamental para la potencia del "Jab" en boxeo y ejercicios de empuje en el gimnasio.</p>
+                <span class="label">Fuerza Explosiva</span>
+            </div>
+
+            <div class="info-card-muscle card-brazos">
+                <h2 class="text-white">Bíceps y Tríceps</h2>
+                <p class="text-white">Soporte vital en ganchos de boxeo y estabilidad en movimientos de baile urbano.</p>
+                <span class="label">Resistencia Muscular</span>
+            </div>
+
+            <div class="info-card-muscle card-abdomen">
+                <h2 class="text-white">Core (Abdomen)</h2>
+                <p class="text-white">El centro de gravedad. Crucial para los giros de cadera en la Salsa y la estabilidad en el Twerk.</p>
+                <span class="label">Control y Balance</span>
+            </div>
+
+            <div class="info-card-muscle card-piernas">
+                <h2 class="text-white">Tren Inferior</h2>
+                <p class="text-white">La base de todo. Potencia en sentadillas y agilidad extrema en los pasos de Bachata.</p>
+                <span class="label">Potencia Base</span>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 FitLife - Diseño Web Fitness</p>
+    </footer>
+  </body>
+</html>

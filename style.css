@@ -1,0 +1,382 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+:root {
+    --primary-color: #2ecc71; /
+    --dark-bg: #1a1a1a;
+    --light-text: #f4f4f4;
+    --accent-color: #e74c3c;
+    --color-boxing: #e74c3c;
+    --color-dance: #9b59b6;
+    --color-gym: #3498db;
+    --bg-panel: #1a1a1a;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+    background: rgba(0, 0, 0, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    color: white;
+}
+
+.header-logo { font-size: 1.5rem; font-weight: bold; }
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-link {
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.nav-link:hover { color: var(--primary); }
+
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('./Imagenes/photo-1534438327276-14e5300c3a48.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem   ;
+}
+
+.hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+
+.btn-primary {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(46, 204, 113, 0.4);
+}
+
+
+section { padding: 80px 5%; 
+    text-align: center; }
+section h2 { margin-bottom: 40px; 
+    font-size: 2.5rem; }
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: black;
+}
+
+
+.card-objetivo {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #333;
+    transition: var(--transition);
+    font-size: 1.4rem;
+}
+
+.card-objetivo:hover {
+    border-color: var(--primary);
+    background: white;
+    transform: translateY(-10px);
+}
+
+.card-objetivo .icon { font-size: 3rem; display: block; margin-bottom: 15px; }
+
+main section:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 40px;
+}
+/* Tarjetas de Rutinas */
+.section-plans {
+    padding: 60px 5%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.plans-container {
+    display: grid;
+    grid-template-columns: 300px 1fr; 
+}
+
+/* Perfil */
+.profile-card {
+    background: var(--bg-panel);
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    position: sticky;
+    top: 100px;
+    margin-right: 20px;
+    color: white;
+}
+
+.profile-title { margin-bottom: 20px; 
+    font-size: 1.2rem; 
+}
+
+.input-group { margin-bottom: 15px; }
+.input-field {
+    width: 100%;
+    padding: 10px;
+    background: #000;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: white;
+    margin-top: 5px;
+}
+
+/* IMC */
+.bmi-dropdown {
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+}
+
+.bmi-summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--primary);
+    list-style: none; 
+}
+
+.bmi-summary::before { content: '➕ '; 
+    font-size: 1.2rem; }
+
+.bmi-content {
+    padding-top: 15px;
+    animation: slideDown 0.3s ease;
+}
+
+/* Servicios */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    color: white;
+}
+
+.service-item {
+    background: var(--bg-panel);
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.service-item:hover { transform: translateY(-10px); }
+
+/* Colores Diferenciales */
+.service-boxing { border-top: 5px solid var(--color-boxing); }
+.service-dance { border-top: 5px solid var(--color-dance); }
+.service-gym { border-top: 5px solid var(--color-gym); }
+
+.service-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: .9rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: var(--color-boxing);
+    text-transform: uppercase;
+}
+
+.badge-dance { background: var(--color-dance); }
+.badge-gym { background: var(--color-gym); }
+
+.service-name { margin: 15px 0 10px; font-size: 1.5rem; }
+.service-desc { color: var(--text-muted); 
+    font-size: 1.2rem; 
+    margin-bottom: 20px; }
+
+.service-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--text-main);
+    margin-bottom: 20px;
+}
+
+.btn-select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #333;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.service-item:hover .btn-select { 
+    background: gray;   
+}
+
+.anatomy-main {
+    background: #000;
+    min-height: auto;
+    padding: 60px 5% 20px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;   
+    margin-bottom: 0%;
+}
+
+.anatomy-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1100px;
+    width: 100%;
+    color: white;
+}
+
+
+.text-white { color: #ffffff !important; 
+    margin-bottom: 15px; 
+    font-size: 1.2rem; 
+}
+
+/* Estilos del SVG */
+.svg-body { width: 100%; max-height: 500px; }
+
+.body-part { fill: #1a1a1a; stroke: #333; }
+
+.muscle-trigger {
+    fill: #222;
+    stroke: #444;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.muscle-trigger:hover {
+    fill: var(--primary); 
+    filter: drop-shadow(0 0 15px var(--primary));
+}
+
+/* --- TARJETAS --- */
+
+.anatomy-content { position: relative; height: 300px; }
+
+.info-card-muscle {
+    position: absolute;
+    top: 0; left: 0; width: 100%;
+    padding: 30px;
+    background: #111;
+    border-radius: 15px;
+    border: 1px solid white;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    color: white;
+}
+
+.label {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+}
+
+
+.card-default { opacity: 1; visibility: visible; 
+    transform: translateY(0); }
+
+
+.anatomy-grid:has(.muscle-trigger:hover) .card-default {
+    opacity: 0; visibility: hidden;
+}
+
+.anatomy-grid:has(.m-pecho:hover) .card-pecho {
+    opacity: 1; visibility: visible; transform: translateY(0);
+}
+
+
+.anatomy-grid:has(.m-brazos:hover) .card-brazos {
+    opacity: 1; visibility: visible; transform: translateY(0);
+}
+
+
+.anatomy-grid:has(.m-abdomen:hover) .card-abdomen {
+    opacity: 1; visibility: visible; transform: translateY(0);
+}
+
+
+.anatomy-grid:has(.m-piernas:hover) .card-piernas {
+    opacity: 1; visibility: visible; transform: translateY(0);
+}
+
+
+/* Footer */
+    footer { padding: 20px 40px;
+        background: #000; 
+        text-align: center; 
+        color: white;
+        font-size: 1rem;
+        margin-top: 0%;
+}
+
+    
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 900px) {
+    .plans-container { grid-template-columns: 1fr; }
+    .profile-sidebar { order: -1; }     
+}
+
+@media (max-width: 768px) {
+    .anatomy-grid { grid-template-columns: 1fr; }
+    .anatomy-content { height: 250px; order: -1; }
+}

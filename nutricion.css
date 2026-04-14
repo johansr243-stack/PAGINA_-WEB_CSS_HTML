@@ -1,0 +1,153 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  
+}
+
+:root {
+    --primary-color: #2ecc71; /
+    --dark-bg: #1a1a1a;
+    --light-text: #f4f4f4;
+    --accent-color: #e74c3c;
+    --color-boxing: #e74c3c;
+    --color-dance: #9b59b6;
+    --color-gym: #3498db;
+    --bg-panel: #1a1a1a;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+    background: rgba(0, 0, 0, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    color: white;
+}
+
+.header-logo { font-size: 1.5rem; font-weight: bold; }
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-link {
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.nav-link:hover { color: var(--primary); }
+
+
+
+.nutri-hero {
+    height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=1471&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* Tarjetas de Macros */
+.macro-card {
+    background: #111;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #222;
+    text-align: center;
+    transition: 0.3s ease;
+    color: white;
+    margin-top: 10px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--primary);
+}
+
+.macro-card:hover { border-color: white; transform: translateY(-5px); }
+
+.macro-header { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
+.macro-icon { font-size: 2rem; }
+
+.progress-container {
+    background: #222;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+}
+
+.progress-bar { height: 100%; border-radius: 5px; background: var(--primary); }
+.p-proteina { width: 85%; }
+.p-carbos { width: 65%; background: #f1c40f; } 
+.p-grasas { width: 45%; background: #3498db; } 
+
+
+.food-table {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #111;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #222;
+    color: white;
+}
+
+.food-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    border-bottom: 1px solid #222;
+    align-items: center;
+    color: white;
+}
+
+.header-row {
+    background: #1a1a1a;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.tag-proteina, .tag-carbo, .tag-grasa {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    width: fit-content;
+    color: white;
+}
+
+.tag-proteina { background: red; }
+.tag-carbo { background: #f1c40f; }
+.tag-grasa { background: #3498db; }
+
+
+.text-muted { color: #888; font-size: 1.2rem; }
