@@ -40,7 +40,16 @@ body {
     color: white;
 }
 
-.header-logo { font-size: 1.5rem; font-weight: bold; }
+.header-logo { 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    
+
+.text_primary {
+        text-decoration: none;
+    color: white;}
+
+    }
 
 .nav-list {
     display: flex;

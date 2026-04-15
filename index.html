@@ -8,19 +8,16 @@
   </head>
   <body>
     <header class="header-main">
-      <div class="header-logo">
-        Sport&<span class="text-primary">Life</span>
+       <div class="header-logo">
+       <a class="text_primary" href="./index.html">Sport&<span class="text-primary">Life</span></a>
       </div>
       <nav class="nav-principal">
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="#rutinas" class="nav-link">Rutinas</a>
+            <a href="./nutricion.html" target="_blank" class="nav-link">Nutrición</a>
           </li>
           <li class="nav-item">
             <a href="./contacto.html" target="_blank" class="nav-link">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a href="./nutricion.html" target="_blank" class="nav-link">Nutrición</a>
           </li>
         </ul>
       </nav>
@@ -56,23 +53,32 @@
         </div>
       </section>
 
-     <section class="section-plans">
+<section class="section-plans">
     <h2 class="section-title">Tu Plan a Medida</h2>
     
     <div class="plans-container">
         <aside class="profile-sidebar">
             <div class="profile-card">
-                <h3 class="profile-title">Configura tu Perfil</h3>
+                <h3 class="profile-title">IMC</h3>
+                
                 <div class="input-group">
                     <label>Edad:</label>
                     <input type="number" class="input-field" placeholder="Ej: 25">
                 </div>
-                
+
                 <details class="bmi-dropdown">
                     <summary class="bmi-summary">Calculadora IMC</summary>
                     <div class="bmi-content">
-                        <input type="number" class="input-field" placeholder="Peso (kg)">
-                        <input type="number" class="input-field" placeholder="Estatura (cm)">
+                        <input type="number" id="peso" class="input-field" placeholder="Peso (kg)">
+                        <input type="number" id="estatura" class="input-field" placeholder="Estatura (cm)">
+                        
+                        <button type="button" class="btn-select_imc" onclick="calcularIMC()">Calcular</button>
+                        
+                        <div id="resultado-imc" class="resultado-box">
+                            <span id="imc-numero">0.0</span>
+                            <small id="imc-estado"></small>
+                        </div>
+
                         <p class="bmi-note">*El IMC ayuda a definir tu punto de partida.</p>
                     </div>
                 </details>
@@ -80,7 +86,6 @@
         </aside>
 
         <div class="services-grid">
-            
             <article class="service-item service-boxing">
                 <div class="service-badge">Intenso</div>
                 <h3 class="service-name">Boxing Master</h3>
@@ -104,7 +109,6 @@
                 <div class="service-price">$40.000 <small>/mes</small></div>
                 <button class="btn-select">Elegir</button>
             </article>
-
         </div>
     </div>
 </section>
@@ -165,5 +169,7 @@
     <footer>
       <p>&copy; 2026 FitLife - Diseño Web Fitness</p>
     </footer>
+
+    <script src="imc.js"></script>
   </body>
 </html>

@@ -37,9 +37,24 @@ body {
     top: 0;
     z-index: 1000;
     color: white;
+    list-style: none;
 }
 
-.header-logo { font-size: 1.5rem; font-weight: bold; }
+.header-logo { 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    
+
+.text_primary {
+        text-decoration: none;
+    color: white;}
+
+    }
+
+.tex_primary {
+    text-decoration: none;
+    list-style: none;
+    color: white;}
 
 .nav-list {
     display: flex;
@@ -198,6 +213,19 @@ main section:last-of-type {
 .bmi-content {
     padding-top: 15px;
     animation: slideDown 0.3s ease;
+}
+
+.btn-select_imc{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background: rgb(49, 48, 48);
+    color: white;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
 /* Servicios */
