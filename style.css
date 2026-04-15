@@ -357,12 +357,13 @@ main section:last-of-type {
 
 
 
-    footer { padding: 20px 40px;
-        background: #000; 
-        text-align: center; 
-        color: white;
-        font-size: 1rem;
-        margin-top: 0%;
+footer { 
+    padding: 20px 40px;
+    background: #000; 
+    text-align: center; 
+    color: white;
+    font-size: 1rem;
+    margin-top: 0%;
 }
 
     

@@ -122,6 +122,7 @@ body {
 }
 
 .p-proteina { width: 85%; 
+    background: red;
 }
 
 .p-carbos { width: 65%; 
@@ -173,4 +174,15 @@ body {
 .tag-grasa { background: #3498db; }
 
 
-.text-muted { color: #888; font-size: 1.2rem; }
+.text-muted { 
+    color: #888; 
+    font-size: 1.2rem; 
+}
+
+   footer { padding: 20px 40px;
+        background: #000; 
+        text-align: center; 
+        color: white;
+        font-size: 1rem;
+        margin-top: 15px;
+}
