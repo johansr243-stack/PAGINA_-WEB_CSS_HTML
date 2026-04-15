@@ -299,7 +299,7 @@ main section:last-of-type {
     filter: drop-shadow(0 0 15px var(--primary));
 }
 
-/* --- TARJETAS --- */
+/* TARJETAS */
 
 .anatomy-content { position: relative; height: 300px; }
 
@@ -356,7 +356,7 @@ main section:last-of-type {
 }
 
 
-/* Footer */
+
     footer { padding: 20px 40px;
         background: #000; 
         text-align: center; 
