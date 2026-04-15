@@ -70,7 +70,9 @@ body {
     font-size: 1.5rem   ;
 }
 
-.hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+.hero h1 { 
+    font-size: 3.5rem; 
+    margin-bottom: 1rem; }
 
 .btn-primary {
     display: inline-block;
@@ -90,10 +92,15 @@ body {
 }
 
 
-section { padding: 80px 5%; 
-    text-align: center; }
-section h2 { margin-bottom: 40px; 
-    font-size: 2.5rem; }
+section { 
+    padding: 80px 5%; 
+    text-align: center; 
+}
+
+section h2 { 
+    margin-bottom: 40px; 
+    font-size: 2.5rem; 
+}
 
 .grid-layout {
     display: grid;
@@ -122,7 +129,10 @@ section h2 { margin-bottom: 40px;
     transform: translateY(-10px);
 }
 
-.card-objetivo .icon { font-size: 3rem; display: block; margin-bottom: 15px; }
+.card-objetivo .icon { 
+    font-size: 3rem; 
+    display: block; 
+    margin-bottom: 15px; }
 
 main section:last-of-type {
     margin-bottom: 0;
@@ -152,7 +162,8 @@ main section:last-of-type {
     color: white;
 }
 
-.profile-title { margin-bottom: 20px; 
+.profile-title { 
+    margin-bottom: 20px; 
     font-size: 1.2rem; 
 }
 
@@ -208,7 +219,7 @@ main section:last-of-type {
 
 .service-item:hover { transform: translateY(-10px); }
 
-/* Colores Diferenciales */
+
 .service-boxing { border-top: 5px solid var(--color-boxing); }
 .service-dance { border-top: 5px solid var(--color-dance); }
 .service-gym { border-top: 5px solid var(--color-gym); }
@@ -227,10 +238,14 @@ main section:last-of-type {
 .badge-dance { background: var(--color-dance); }
 .badge-gym { background: var(--color-gym); }
 
-.service-name { margin: 15px 0 10px; font-size: 1.5rem; }
+.service-name { margin: 15px 0 10px; 
+    font-size: 1.5rem; 
+}
+
 .service-desc { color: var(--text-muted); 
     font-size: 1.2rem; 
-    margin-bottom: 20px; }
+    margin-bottom: 20px; 
+}
 
 .service-price {
     font-size: 1.8rem;
@@ -276,7 +291,8 @@ main section:last-of-type {
 }
 
 
-.text-white { color: #ffffff !important; 
+.text-white { 
+    color: #ffffff !important; 
     margin-bottom: 15px; 
     font-size: 1.2rem; 
 }
@@ -301,7 +317,8 @@ main section:last-of-type {
 
 /* TARJETAS */
 
-.anatomy-content { position: relative; height: 300px; }
+.anatomy-content { position: relative; 
+    height: 300px; }
 
 .info-card-muscle {
     position: absolute;
@@ -328,7 +345,8 @@ main section:last-of-type {
 }
 
 
-.card-default { opacity: 1; visibility: visible; 
+.card-default { opacity: 1; 
+    visibility: visible; 
     transform: translateY(0); }
 
 
@@ -337,7 +355,9 @@ main section:last-of-type {
 }
 
 .anatomy-grid:has(.m-pecho:hover) .card-pecho {
-    opacity: 1; visibility: visible; transform: translateY(0);
+    opacity: 1; 
+    visibility: visible; 
+    transform: translateY(0);
 }
 
 
@@ -352,7 +372,9 @@ main section:last-of-type {
 
 
 .anatomy-grid:has(.m-piernas:hover) .card-piernas {
-    opacity: 1; visibility: visible; transform: translateY(0);
+    opacity: 1; 
+    visibility: visible; 
+    transform: translateY(0);
 }
 
 
