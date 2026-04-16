@@ -43,7 +43,7 @@
                 <div class="recipe-img-placeholder">🍲</div>
                 <div class="recipe-content">
                     <span class="recipe-tag tag-carbo">Pre-Entreno</span>
-                    <h3 class="recipe-title">Avena Explosiva con Plátano</h3>
+                    <a class="recipe-title" href="https://www.youtube.com/shorts/eiDr1tRlnSM" target="_blank">Avena Explosiva con Plátano</a>
                     <p class="recipe-desc">Carbohidratos complejos para mantener la energía durante los asaltos.</p>
                     <ul class="recipe-macros">
                         <li>Proteína: 12g</li>
@@ -57,7 +57,7 @@
                 <div class="recipe-img-placeholder">🍣</div>
                 <div class="recipe-content">
                     <span class="recipe-tag tag-proteina">Post-Entreno</span>
-                    <h3 class="recipe-title">Salmón Glaseado con Quinoa</h3>
+                    <a class="recipe-title" href="https://www.youtube.com/watch?v=4L2Iugyx2H0" target="_blank">Salmón Glaseado con Soja y Miel</a>
                     <p class="recipe-desc">Recuperación muscular rápida y grasas saludables para reducir la inflamación.
                     </p>
                     <ul class="recipe-macros">
@@ -72,7 +72,7 @@
                 <div class="recipe-img-placeholder">🥤</div>
                 <div class="recipe-content">
                     <span class="recipe-tag tag-carbo">Hidratación</span>
-                    <h3 class="recipe-title">Smoothie Tropical de Coco</h3>
+                    <a class="recipe-title" href="https://www.youtube.com/watch?v=8_n1KkzNO2A" target="_blank">Smoothie Tropical de Coco</a>
                     <p class="recipe-desc">Electrolitos naturales y azúcares de rápida absorción para agilidad en la
                         pista.</p>
                     <ul class="recipe-macros">
@@ -87,7 +87,7 @@
                 <div class="recipe-img-placeholder">🥗</div>
                 <div class="recipe-content">
                     <span class="recipe-tag tag-grasa">Almuerzo Ligero</span>
-                    <h3 class="recipe-title">Ensalada de Atún y Aguacate</h3>
+                    <a class="recipe-title" href="https://www.youtube.com/watch?v=08nl_G_YlE0" target="_blank">Ensalada de Atún y Aguacate</a>
                     <p class="recipe-desc">Ligera para no sentir pesadez, con grasas que mantienen la saciedad.</p>
                     <ul class="recipe-macros">
                         <li>Proteína: 25g</li>
@@ -101,7 +101,7 @@
                 <div class="recipe-img-placeholder">🥩</div>
                 <div class="recipe-content">
                     <span class="recipe-tag tag-proteina">Hipertrofia</span>
-                    <h3 class="recipe-title">Bife de Chorizo con Batata</h3>
+                    <a class="recipe-title" href="https://www.youtube.com/watch?v=ZpPJvCtR0gc" target="_blank">Bife de Chorizo con Batata</a>
                     <p class="recipe-desc">Alta carga de proteína y carbohidratos densos para la construcción muscular.
                     </p>
                     <ul class="recipe-macros">
@@ -116,7 +116,7 @@
                 <div class="recipe-img-placeholder">🍳</div>
                 <div class="recipe-content">
                     <span class="recipe-tag tag-proteina">Desayuno Anabólico</span>
-                    <h3 class="recipe-title">Omelette de Claras y Espinaca</h3>
+                    <a class="recipe-title" href="https://www.youtube.com/watch?v=60yPBzgkb04" target="_blank">Omelette de Claras y Espinaca</a>
                     <p class="recipe-desc">Proteína limpia para empezar el día con el metabolismo a tope.</p>
                     <ul class="recipe-macros">
                         <li>Proteína: 28g</li>
@@ -133,47 +133,6 @@
         <button class="btn-share-recipe" onclick="toggleModal()">+ Compartir mi Receta</button>
     </div>
 
-    <div id="recipeModal" class="modal-overlay">
-        <div class="modal-content">
-            <span class="close-modal" onclick="toggleModal()">&times;</span>
-            <h2 class="text-white">Comparte tu <span class="text-primary">Receta Fit</span></h2>
-            <p class="text-muted">Ayuda a otros miembros de la comunidad FitLife.</p>
-
-            <form id="form-share-recipe" class="share-form">
-                <div class="input-group">
-                    <label>Nombre del Plato</label>
-                    <input type="text" id="user-recipe-name" placeholder="Ej: Bowl de Quinoa Energético" required>
-                </div>
-
-                <div class="form-row">
-                    <div class="input-group">
-                        <label>Disciplina Recomendada</label>
-                        <select id="user-recipe-cat">
-                            <option value="boxing">Boxeo / HIIT</option>
-                            <option value="dance">Baile</option>
-                            <option value="gym">Pesas / Fuerza</option>
-                        </select>
-                    </div>
-                    <div class="input-group">
-                        <label>Macro Principal</label>
-                        <select id="user-recipe-macro">
-                            <option value="tag-proteina">Proteína</option>
-                            <option value="tag-carbo">Carbohidrato</option>
-                            <option value="tag-grasa">Grasa Saludable</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <label>Ingredientes y Pasos</label>
-                    <textarea id="user-recipe-desc" rows="4"
-                        placeholder="Describe brevemente cómo prepararlo..."></textarea>
-                </div>
-
-                <button type="submit" class="btn-select">Publicar Receta</button>
-            </form>
-        </div>
-    </div>
 </main>
 
 <footer class="footer-site">

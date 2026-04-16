@@ -103,11 +103,12 @@ body {
     font-weight: bold;
     margin-top: 20px;
     transition: var(--transition);
+    border: 1px solid white;
 }
 
 .btn-primary:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(46, 204, 113, 0.4);
+    box-shadow: 0 0 20px white;
 }
 
 
@@ -519,7 +520,7 @@ main section:last-of-type {
 .social-link {
     color: #fff;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     transition: 0.3s;
 }
 
