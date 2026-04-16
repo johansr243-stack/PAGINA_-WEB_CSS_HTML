@@ -486,6 +486,24 @@ body {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .anatomy-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .anatomy-content {
+        height: 250px;
+        order: -1;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .nav-list {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     
     .anatomy-grid {
         grid-template-columns: 1fr;
