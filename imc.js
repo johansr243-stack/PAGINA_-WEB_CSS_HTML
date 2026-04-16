@@ -63,45 +63,4 @@ function filterRecipes(category) {
 }
 
 
-function toggleModal() {
-    const modal = document.getElementById('recipeModal');
-    modal.style.display = (modal.style.display === 'flex') ? 'none' : 'flex';
-}
-
-document.getElementById('form-share-recipe').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-   
-    const nombre = document.getElementById('user-recipe-name').value;
-    const cat = document.getElementById('user-recipe-cat').value;
-    const macroTag = document.getElementById('user-recipe-macro').value;
-    const desc = document.getElementById('user-recipe-desc').value;
-
-   
-    const grid = document.querySelector('.recipes-grid');
-    const newCard = document.createElement('article');
-    newCard.className = `recipe-card recipe-${cat}`;
-    
-   
-    newCard.innerHTML = `
-        <div class="recipe-img-placeholder">🍲</div>
-        <div class="recipe-content">
-            <span class="recipe-tag ${macroTag}">${macroTag.replace('tag-', '').toUpperCase()}</span>
-            <h3 class="recipe-title">${nombre}</h3>
-            <p class="recipe-desc">${desc}</p>
-            <ul class="recipe-macros">
-                <li>Proteína: --</li>
-                <li>Carbos: --</li>
-                <li>Grasas: --</li>
-            </ul>
-        </div>
-    `;
-
-  
-    grid.prepend(newCard);
-
-    this.reset();
-    toggleModal();
-    alert("¡Gracias! Tu receta ha sido compartida con la comunidad.");
-});
 
