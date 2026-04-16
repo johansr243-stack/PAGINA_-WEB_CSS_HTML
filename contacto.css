@@ -273,6 +273,12 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .nav-list {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .full-width {
         grid-column: span 1;
     }
@@ -285,6 +291,12 @@ body {
 @media (max-width: 600px) {
     .form-grid {
         grid-template-columns: 1fr;
+    }
+
+    .nav-list {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .full-width {

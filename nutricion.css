@@ -456,6 +456,13 @@ body {
 }
 
 @media (max-width: 600px) {
+
+    .nav-list {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .anatomy-grid {
         grid-template-columns: 1fr;
     }
@@ -466,11 +473,20 @@ body {
     }
 }
 
-@media (max-width: 500px) {}
+@media (max-width: 500px) {
+
+}
 
 
 
 @media (max-width: 768px) {
+
+    .nav-list {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
     .anatomy-grid {
         grid-template-columns: 1fr;
     }
