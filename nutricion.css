@@ -393,7 +393,7 @@ body {
     color: #bbb;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .footer-links a:hover {
@@ -410,7 +410,7 @@ body {
 .social-link {
     color: #fff;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     transition: 0.3s;
 }
 
@@ -441,7 +441,7 @@ body {
 }
 
 .legal-links a:hover {
-    font-size: 1rem;
+    font-size: 1.2 rem;
     color: #888;
 }
 
