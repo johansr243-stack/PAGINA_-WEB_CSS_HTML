@@ -16,6 +16,11 @@ body {
     flex-wrap: wrap;
 }
 
+main{
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
 :root {
     --primary-color: #2ecc71;/ --dark-bg: #1a1a1a;
     --light-text: #f4f4f4;
@@ -330,7 +335,7 @@ main section:last-of-type {
 .anatomy-main {
     background: #000;
     min-height: auto;
-    padding: 60px 5% 20px 5%;
+    padding: 60px 5% 0px 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -358,6 +363,7 @@ main section:last-of-type {
 .svg-body {
     width: 100%;
     max-height: 500px;
+    display: block;
 }
 
 .body-part {
@@ -451,6 +457,9 @@ main section:last-of-type {
     transform: translateY(0);
 }
 
+footer {
+    margin-top: 0%;
+}   
 
 .footer-site {
     background: #050505;
@@ -554,6 +563,7 @@ main section:last-of-type {
     font-size: 1.2 rem;
     color: #888;
 }
+
 
 @keyframes slideDown {
     from {
