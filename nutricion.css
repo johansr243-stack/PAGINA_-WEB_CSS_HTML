@@ -497,7 +497,7 @@ body {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 400px) {
 
     .nav-list {
         gap: 15px;
