@@ -169,11 +169,13 @@ body {
     padding: 60px 5%;
     max-width: 1200px;
     margin: 0 auto;
+    color: black;
 }
 
 .recipes-header {
     text-align: center;
     margin-bottom: 40px;
+    color: black;
 }
 
 .recipe-filters {
@@ -202,9 +204,9 @@ body {
 }
 
 .filter-btn.active {
-    background: var(--primary);
+    background: white;
     color: #000;
-    border-color: var(--primary);
+    border-color: black;
 }
 
 .recipes-grid {
