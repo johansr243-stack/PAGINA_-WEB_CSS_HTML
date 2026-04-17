@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -13,12 +13,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    flex-wrap: wrap;
+
 }
 
 :root {
-    --primary: #2ecc71;
-    --primary-color: #2ecc71;
-    --dark-bg: #1a1a1a;
+    --primary-color: #2ecc71;/ --dark-bg: #1a1a1a;
     --light-text: #f4f4f4;
     --accent-color: #e74c3c;
     --color-boxing: #e74c3c;
@@ -27,7 +27,7 @@ body {
     --bg-panel: #1a1a1a;
 }
 
-/* ======= HEADER ======= */
+
 .header-main {
     display: flex;
     justify-content: space-between;
@@ -43,11 +43,13 @@ body {
 .header-logo {
     font-size: 1.5rem;
     font-weight: bold;
-}
 
-.header-logo .text_primary {
-    text-decoration: none;
-    color: white;
+
+    .text_primary {
+        text-decoration: none;
+        color: white;
+    }
+
 }
 
 .nav-list {
@@ -57,7 +59,7 @@ body {
 }
 
 .nav-link {
-    color: white;
+    color: var(--text-main);
     text-decoration: none;
     font-size: 1.5rem;
     transition: 0.3s;
@@ -67,16 +69,8 @@ body {
     color: var(--primary);
 }
 
-/* ======= SECCIONES GENERALES ======= */
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: black;
-}
-
-/* ======= MACRO CARDS ======= */
-.macro-card {
+/* Tarjetas de Macros */
+.macro-card {   
     background: #111;
     padding: 30px;
     border-radius: 20px;
@@ -85,6 +79,13 @@ body {
     transition: 0.3s ease;
     color: white;
     margin-top: 10px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: black;
 }
 
 .macro-card:hover {
@@ -101,13 +102,16 @@ body {
 
 .macro-icon {
     font-size: 2rem;
+
 }
+
 
 .progress-container {
     background: #222;
     height: 10px;
     border-radius: 5px;
     margin-top: 20px;
+    color: white;
 }
 
 .progress-bar {
@@ -116,11 +120,23 @@ body {
     background: var(--primary);
 }
 
-.p-proteina { width: 85%; background: red; }
-.p-carbos   { width: 65%; background: #f1c40f; }
-.p-grasas   { width: 45%; background: #3498db; }
+.p-proteina {
+    width: 85%;
+    background: red;
+}
 
-/* ======= TABLA DE ALIMENTOS ======= */
+.p-carbos {
+    width: 65%;
+    background: #f1c40f;
+}
+
+.p-grasas {
+    width: 45%;
+    background: #3498db;
+}
+
+
+
 .food-table {
     max-width: 900px;
     margin: 0 auto;
@@ -146,7 +162,9 @@ body {
     color: var(--primary);
 }
 
-.tag-proteina, .tag-carbo, .tag-grasa {
+.tag-proteina,
+.tag-carbo,
+.tag-grasa {
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.75rem;
@@ -155,29 +173,36 @@ body {
     color: white;
 }
 
-.tag-proteina { background: red; }
-.tag-carbo    { background: #f1c40f; }
-.tag-grasa    { background: #3498db; }
+.tag-proteina {
+    background: red;
+}
+
+.tag-carbo {
+    background: #f1c40f;
+}
+
+.tag-grasa {
+    background: #3498db;
+}
+
 
 .text-muted {
     color: #888;
     font-size: 1.5rem;
 }
 
-/* ======= RECETAS ======= */
 .section-recipes {
     padding: 60px 5%;
     max-width: 1200px;
     margin: 0 auto;
-    color: black;
 }
 
 .recipes-header {
     text-align: center;
     margin-bottom: 40px;
-    color: black;
 }
 
+/* Filtros */
 .recipe-filters {
     display: flex;
     justify-content: center;
@@ -204,17 +229,19 @@ body {
 }
 
 .filter-btn.active {
-    background: white;
+    background: var(--primary);
     color: #000;
-    border-color: black;
+    border-color: var(--primary);
 }
 
+/* Grid de Tarjetas */
 .recipes-grid {
     display: flex;
     flex-direction: column;
     gap: 30px;
     align-items: center;
 }
+
 
 .recipe-card {
     background: #111;
@@ -224,8 +251,7 @@ body {
     transition: transform 0.3s ease, border-color 0.3s ease;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 500px;
+    width: 500px;
 }
 
 .recipe-card:hover {
@@ -265,6 +291,7 @@ body {
     color: #fff;
     margin-bottom: 10px;
     font-size: 1.5rem;
+    list-style: none;
 }
 
 .recipe-desc {
@@ -284,7 +311,6 @@ body {
     padding-top: 15px;
     font-size: 0.85rem;
     color: #bbb;
-    flex-wrap: wrap;
 }
 
 .recipe-macros li {
@@ -293,6 +319,7 @@ body {
     border-radius: 5px;
 }
 
+/* Botón de compartir */
 .share-recipe-container {
     text-align: center;
     margin-top: 40px;
@@ -306,7 +333,7 @@ body {
     border-radius: 12px;
     cursor: pointer;
     font-weight: bold;
-    transition: 0.3s;
+    transition: 0.3s;   
     margin-bottom: 40px;
 }
 
@@ -315,103 +342,6 @@ body {
     color: #000;
 }
 
-/* ======= ANATOMY ======= */
-.anatomy-main {
-    background: #000;
-    padding: 60px 5% 0 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin: 0;
-}
-
-.anatomy-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    max-width: 1100px;
-    width: 100%;
-    color: white;
-}
-
-.text-white {
-    color: #ffffff !important;
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-}
-
-.svg-body {
-    width: 100%;
-    max-height: 500px;
-    display: block;
-}
-
-.body-part {
-    fill: #1a1a1a;
-    stroke: #333;
-}
-
-.muscle-trigger {
-    fill: #222;
-    stroke: #444;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.muscle-trigger:hover {
-    fill: var(--primary);
-    filter: drop-shadow(0 0 15px var(--primary));
-}
-
-.anatomy-content {
-    position: relative;
-    height: 300px;
-}
-
-.info-card-muscle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px;
-    background: #111;
-    border-radius: 15px;
-    border: 1px solid white;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(20px);
-    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    color: white;
-}
-
-.label {
-    display: inline-block;
-    background: var(--primary);
-    color: white;
-    font-weight: bold;
-    padding: 5px 12px;
-    border-radius: 5px;
-    font-size: 1.3rem;
-}
-
-.card-default {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.anatomy-grid:has(.muscle-trigger:hover) .card-default {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.anatomy-grid:has(.m-pecho:hover)   .card-pecho   { opacity: 1; visibility: visible; transform: translateY(0); }
-.anatomy-grid:has(.m-brazos:hover)  .card-brazos  { opacity: 1; visibility: visible; transform: translateY(0); }
-.anatomy-grid:has(.m-abdomen:hover) .card-abdomen { opacity: 1; visibility: visible; transform: translateY(0); }
-.anatomy-grid:has(.m-piernas:hover) .card-piernas { opacity: 1; visibility: visible; transform: translateY(0); }
-
-/* ======= FOOTER ======= */
 .footer-site {
     background: #050505;
     color: #fff;
@@ -452,6 +382,7 @@ body {
 .footer-links {
     list-style: none;
     padding: 0;
+    font-size: 1rem;
 }
 
 .footer-links li {
@@ -497,8 +428,6 @@ body {
     align-items: center;
     color: #555;
     font-size: 0.85rem;
-    flex-wrap: wrap;
-    gap: 10px;
 }
 
 .legal-links {
@@ -512,10 +441,10 @@ body {
 }
 
 .legal-links a:hover {
+    font-size: 1.2 rem;
     color: #888;
 }
 
-/* ======= RESPONSIVE ======= */
 @media (max-width: 900px) {
     .plans-container {
         grid-template-columns: 1fr;
@@ -524,13 +453,10 @@ body {
     .profile-sidebar {
         order: -1;
     }
-
-    .footer-container {
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+
     .nav-list {
         gap: 15px;
         flex-wrap: wrap;
@@ -545,13 +471,22 @@ body {
         height: 250px;
         order: -1;
     }
-
-    .footer-container {
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .nav-list {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .anatomy-grid {
         grid-template-columns: 1fr;
     }
@@ -560,31 +495,18 @@ body {
         height: 250px;
         order: -1;
     }
-
-    .footer-container {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-    }
 }
 
-@media (max-width: 400px) {
-    .header-main {
-        flex-direction: column;
-        gap: 10px;
-        padding: 1rem 5%;
-    }
+@media (max-width: 450px) {
 
     .nav-list {
-        gap: 10px;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-
+    
     .anatomy-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
     }
 
     .anatomy-content {
